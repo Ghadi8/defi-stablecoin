@@ -55,6 +55,5 @@ contract InvariantsTest is StdInvariant, Test {
     // Getter functions should never revert
     function invariant_getterFunctionsShouldNeverRevert() public view {
         engine.getCollateralTokens();
-
     }
 }

@@ -35,7 +35,7 @@ contract Handler is Test {
         weth = ERC20Mock(collateralTokens[0]);
         wbtc = ERC20Mock(collateralTokens[1]);
 
-       ethUsdPriceFeed = MockV3Aggregator(engine.getPriceFeed(address(weth)));
+        ethUsdPriceFeed = MockV3Aggregator(engine.getPriceFeed(address(weth)));
     }
 
     function depositCollateral(uint256 collateralSeed, uint256 amountCollateral) public {
